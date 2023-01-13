@@ -1,0 +1,8 @@
+tag-prefix: 'version/'
+branches:
+  master:
+    regex: ^main$
+    tag: ''
+    increment: Minor
+  release:
+    tag: ''

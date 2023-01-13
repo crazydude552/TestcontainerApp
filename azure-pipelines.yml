@@ -1,0 +1,28 @@
+variables:
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+  MakeArtifact: ${{or(startsWith(variables['Build.SourceBranch'], 'refs/heads/main'), startsWith(variables['Build.SourceBranch'], 'refs/heads/release'))}}
+  CreateTag: ${{startsWith(variables['Build.SourceBranch'], 'refs/heads/release')}}
+  RunSonarqube: ${{ eq(variables['Build.Reason'], 'Schedule')}}
+  system.debug: true
+
+resources:
+  repositories:
+  - repository: template-pipeline
+    type: git
+    name: Solution Development/template-pipeline
+    ref: refs/heads/feature/dotnet/releases
+
+trigger:
+  - main
+  - release/*
+
+stages:
+- stage: build
+  displayName: 'Build and publish artifacts'
+  jobs:
+  - template: Build/DN-Mixed/Job.yml@template-pipeline
+    parameters:
+      BuildDemands: 'AZP_Type_vs17_2'
+      slnPath: './ITG.POC.ApiTesting.Functional.DN6.sln'
+      buildFolderPath: 'pipeline/build'

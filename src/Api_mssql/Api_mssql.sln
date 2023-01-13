@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api_mssql", "Api_mssql.csproj", "{2421252B-D8F1-4BB8-BE04-764FFD293D9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "..\Tests\Tests.csproj", "{4D8C1837-DF4E-45C8-89C3-DBC163270962}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2421252B-D8F1-4BB8-BE04-764FFD293D9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2421252B-D8F1-4BB8-BE04-764FFD293D9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2421252B-D8F1-4BB8-BE04-764FFD293D9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2421252B-D8F1-4BB8-BE04-764FFD293D9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D8C1837-DF4E-45C8-89C3-DBC163270962}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D8C1837-DF4E-45C8-89C3-DBC163270962}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D8C1837-DF4E-45C8-89C3-DBC163270962}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D8C1837-DF4E-45C8-89C3-DBC163270962}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A059C780-CD54-4502-95D4-F5C092DCD9FC}
+	EndGlobalSection
+EndGlobal
